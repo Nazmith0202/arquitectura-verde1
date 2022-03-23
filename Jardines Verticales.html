@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardines Verticales</title>
+    <link rel="stylesheet" href="Jardines Verticales.css">
+    <style>
+       *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+body .menu-navegacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+body .contact-us {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+main{
+    background: #DDD2C0;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: url(https://i.picasion.com/resize92/7e308a54ce5298269d13b2e099e26537.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.menu-navegacion{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.199);
+    width: 1500px;
+}
+
+.menu-navegacion a{
+    position: static;
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-navegacion a:hover{
+    background: #faae8e;
+}
+/* Nuestro Servicio */
+
+.services-contenedor p{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.subtitulo p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.checklist-servicio{
+    width: 45%;
+}
+.service{
+    margin-bottom: 40px;
+}
+
+
+.contenedor-servicio{
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.contenedor-servicio img{
+    display: flex;
+}
+
+
+.contenedor-servicio h1{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #b1c5b4 0%, #3f3f2d 100%);
+    width: 30px;
+    height: 30px;
+    color:#fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.gallery{
+    background: rgb(231, 248, 227) ;
+}
+
+
+
+/* Footer*/
+
+footer{
+    background: #475c45;
+    padding-bottom: 0.2px;
+}
+
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.footer_copy{
+    font-weight: 300;
+}
+
+.footer_img{
+    width: 60%;
+}
+
+
+.social-media{
+    width: auto;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color: #3d6856;
+}
+
+.waves{
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+    .contenedor-servicio{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+        text-align: center;
+    }
+
+    .service{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 100%;
+    }  
+} 
+    </style>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">¿Qué es un Jardín Vertical?</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="services-contenedor" id="acerca">
+                <h2 class="subtitulo">¿Qué es un Jardín Vertical?</h2>
+                <p>
+                    El cambio climático en las zonas urbanas requiere un nuevo diseño más inteligente de la ciudad.
+                    La vegetación es una de las principales soluciones a las temperaturas extremas o a las fuertes lluvias. 
+                    Por otra parte, las personas se sienten más cómodas en un entorno verde. Los jardines verticales o muros 
+                    verdes necesitan solamente una área pequeña para generar una gran cantidad de beneficios. A medida que 
+                    trabajamos juntos, avanzamos hacia una ciudad más sostenible, habitable y con mejor clima.
+                </p>
+                <p>
+                <img src="https://i.picasion.com/pic92/f3c4b6ea4225ac3f2b11563eb34ae91d.gif" width="300" height="283" border="0" alt="https://picasion.com/" />
+                </p>
+                <h2 class="subtitulo" id="beneficios">Beneficios</h2>
+                <p>
+                    Un jardín vertical ofrece numerosos beneficios a nivel económico, ecológico y social. Una fachada vegetal ayuda 
+                    a purificar el aire, reducir la temperatura ambiente, regular la temperatura y promueve la biodiversidad en la
+                    ciudad. Los muros verdes forman parte de la construcción bioclimática. Y, es más, la gente es más feliz en un 
+                    entorno verde que en un entorno gris. A continuación explicamos los beneficios, uno a uno.
+                </p>
+                <p>
+                    <img src="https://i.picasion.com/pic92/a794d87f8d43c33c681f30dfeff2a1b3.gif" width="300" height="337" border="0" alt="https://picasion.com/" />
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor-servicio">
+            
+                <div class="checklist-servicio">
+                        <div class="service">
+                            <br>
+                            <br>
+                            <h3 class ="n-service"><span class="number">1</span>Purificacion del Aire</h3>
+                            <p>Las plantas en un jardín vertical filtran partículas del aire y convierten el CO2 en oxígeno. 1 m2 de 
+                               fachada vegetal extrae 2,3 kg de CO2 al año del aire y produce 1,7 kg de oxígeno. Con una fachada vegetal 
+                               contribuye a la purificación del aire.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">2</span>Reducción de la temperatura ambiente</h3>
+                            <p>Las plantas absorben la luz solar, el 50 % se absorbe y reflejan el 30 %; esto ayuda a crear un clima más 
+                               frío y agradable. En ambientes interiores esto significa que se requiere un 33 % menos de aire acondicionado,
+                               que a su vez significa un ahorro de energía. Una fachada vegetal también tiene una influencia positiva sobre
+                               el efecto de isla de calor en la ciudad. En general, esto significa una reducción de 3 °C de la temperatura
+                               de la ciudad..
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">3</span>Reducción del ruido ambiente interior y exterior</h3>
+                            <p>Una fachada vegetal actúa como una barrera de sonido en su edificio. Absorbe un 41 % más de ruido que una 
+                               fachada tradicional y esto significa un entorno mucho más tranquilo, tanto dentro como fuera de su edificio.
+                               Esto se traduce en una reducción de 8 dB, lo que significa que el ruido ambiental se reduce a la mitad.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">4</span>Ambiente Saludable</h3>
+                            <p>El verde promueve un ambiente interior saludable. Disminuyen las quejas, tales como irritación de los ojos, 
+                                dolores de cabeza, dolores de garganta y cansancio. En las oficinas donde hay mucha vegetación, hay una notable 
+                                disminución de las bajas por enfermedad.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">5</span>Incremento de la producción</h3>
+                            <p>Un entorno de trabajo verde puede conseguir un aumento del 15 % en la productividad. Las plantas tienen un 
+                               efecto positivo sobre las personas. Esto también se refleja en la satisfacción de los empleados con su 
+                               trabajo.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">6</span>Ofrece un eterno de curación</h3>
+                            <p>El verde estimula una recuperación más rápida en los pacientes, lo que implica una estancia hospitalaria más 
+                                corta. La tolerancia de las personas al dolor es mayor en un entorno verde. Esto también se conoce como 
+                                «entorno de curación». 
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">7</span>Aumenta la sensación de bienestar</h3>
+                            <p>Vivir y trabajar en un entorno verde tiene un efecto positivo sobre el bienestar de las personas. 
+                                El verde da sensación de relajación y reduce el estrés. 
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">8</span>Crea una barrera resistente al fuego</h3>
+                            <p>Las plantas contienen de forma natural una gran cantidad de humedad. Con un muro vegetal se crea una capa natural 
+                                resistente al fuego, en su casa o en un edificio de oficinas. Además, el sistema de fachada vegetal de Sempergreen 
+                                es el único del mercado que cumple con los más altos estándares europeos de seguridad contra incendios, 
+                                B-s2, d0. 
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">9</span>Aumenta el valor de la propiedad</h3>
+                            <p>El aspecto natural y sostenible, combinado con una reducción en los costes de energía, se traduce en un aumento del 
+                                valor de la propiedad.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">10</span>Alarga la vida útil de la fachada</h3>
+                            <p>Una pared vegetal ofrece protección contra influencias externas, como las fluctuaciones de sol, lluvia, viento y 
+                               temperatura, y alarga la vida útil de la fachada.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">11</span>Aumenta la biodiversidad</h3>
+                            <p>Las plantas que se incluyen en el jardín vertical promueven el hábitat de las aves, mariposas e insectos, especialmente 
+                                en un entorno urbano que está fabricado principalmente de hormigón y asfalto.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">12</span>Incremento de la producción</h3>
+                            <p>Un entorno de trabajo verde puede conseguir un aumento del 15 % en la productividad. Las plantas tienen un 
+                               efecto positivo sobre las personas. Esto también se refleja en la satisfacción de los empleados con su 
+                               trabajo.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">13</span>Proporciona una reserva de agua de lluvia</h3>
+                            <p>Un muro vegetal absorbe el agua de lluvia a través de las plantas y su sustrato, actuando como una reserva de agua. 
+                                Esto retarda la descarga de la lluvia al sistema de alcantarillado, purifica el agua de lluvia y también se evapora 
+                                a través de las hojas de las plantas. Así que, todo esto, ayuda a estabilizar el nivel de las aguas subterráneas, reduce 
+                                la carga máxima en el sistema de aguas residuales y disminuye el riesgo de inundaciones.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">14</span>Verde-directo</h3>
+                            <p>Con el uso de los paneles cuidadosamente precultivados de Sempergreen, se puede lograr un resultado verde-directo. En el momento 
+                                de la entrega de los paneles, la fachada cuenta con una cobertura del 90 %, por lo que obtiene los beneficios inmediatamente.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">15</span>Sin preocupación por el mantemiento</h3>
+                            <p>Gracias al contrato de mantenimiento, no tendrá que preocuparse por su jardín vertical. Nos ocupamos de las plantas por usted y 
+                                nos aseguramos de que estén exuberantes y verdes durante todo el año.
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">16</span>Más Interacción social, menos vandalismo</h3>
+                            <p>Trabajar o vivir en un entorno verde une a las personas. Se sabe que el «verde a pequeña escala» tiene un efecto positivo sobre la 
+                                cohesión social en los barrios. Las áreas con más zonas verdes sufren menos agresiones, violencia y vandalismo.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/e23d6acead4d32096b9e763f036c521f.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer id="contacto">
+        <div class="waves" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.57,87.34 C31.04,151.48 357.78,-70.53 500.00,115.97 L500.56,-1.45 L-0.56,-0.47 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+        <div class="contenedor footer-content">
+
+            <div class="contact-us">
+                <div class="footer_texts">
+                    <h2 class="title">Arquitectura Verde</h2>
+                    <p class="footer_copy">Somos expertos cumpliendo tus sueños</p>
+
+                    <div class="social-media">
+                        <a href="https://www.whatsapp.com" target="_blank"class="social-media-icon">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.instagram.com/5.0.5_.a/" target="_blank"class="social-media-icon">
+                           <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009554807218" target="_blank" class="social-media-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="https://media2.giphy.com/media/PcJDzGFriG2bPsPATX/giphy.gif?cid=790b7611a10d57f625384866f5e2a374d423e4b4fb1fac34&rid=giphy.gif&ct=s" width="300" height="215" border="0" alt="https://picasion.com/" class="footer_img">
+            </div>
+            <div class="line"></div>
+        </footer>
+</body>
+</html>

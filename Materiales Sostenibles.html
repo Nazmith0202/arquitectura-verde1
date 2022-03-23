@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiales Sostenibles</title>
+    <link rel="stylesheet" href="Materiales Sostenibles.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+body .menu-navegacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+body .contact-us {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+main{
+    background: #DDD2C0;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: url(https://i.picasion.com/resize92/7e308a54ce5298269d13b2e099e26537.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.menu-navegacion{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.199);
+    width: 1500px;
+}
+
+.menu-navegacion a{
+    position: static;
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-navegacion a:hover{
+    background: #faae8e;
+}
+/* Nuestro Servicio */
+
+.services-contenedor p{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.subtitulo p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.checklist-servicio{
+    width: 45%;
+}
+.service{
+    margin-bottom: 40px;
+}
+
+
+.contenedor-servicio{
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.contenedor-servicio img{
+    width: 50%;
+}
+
+
+.contenedor-servicio h1{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #b1c5b4 0%, #3f3f2d 100%);
+    width: 30px;
+    height: 30px;
+    color:#fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+
+/* Footer*/
+
+footer{
+    background: #475c45;
+    padding-bottom: 0.2px;
+}
+
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.footer_copy{
+    font-weight: 300;
+}
+
+.footer_img{
+    width: 60%;
+}
+
+
+.social-media{
+    width: auto;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color: #3d6856;
+}
+
+.waves{
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+    .contenedor-servicio{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+        text-align: center;
+    }
+
+    .service{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    .cont-experts{
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 100%;
+    }  
+}
+    </style>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">Materiales</a>
+            <a href="#madera">Madera</a>
+            <a href="#celulosa">Celulosa</a>
+            <a href="#corcho">Corcho</a>
+            <a href="#lana">Lana de oveja</a>
+            <a href="#barro">Barro Cocido</a>
+            <a href="#bambú">Bambú</a>
+            <a href="#pinturas">Pinturas Naturales</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="services-contenedor" id="acerca">
+            <div class="contenedor-servicio"></div>
+                <h2 class="subtitulo">MATERIALES SOSTENIBLES</h2>
+                <h2 class="subtitulo" >Materiales</h2>
+                <p>
+                    Existen numerosos materiales sostenibles, pero para la construcción sostenible, 
+                    los procesos empleados para su obtención y colocación también deben serlo.
+                </p>
+                <br>
+                <p>
+                    Vamos a ver algunos de los materiales que más se están empleando en pro de la sostenibilidad. 
+                    Dichos materiales pueden incorporar tecnología que mejore su funcionamiento y su valor sostenible. 
+                </p>
+                <br>
+                <br>
+            <div class="contenedor-servicio">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class ="n-service" id="madera"><span class="number">+</span>Madera</h3>
+                            <p>
+                                La madera es uno de los componentes históricamente más empleados. Presenta un impacto 
+                                ambiental mínimo en su producción y ciclo de vida, asegurándose siempre de que tiene un origen certificado y sostenible. 
+                            </p>
+                            <br>
+                            <p>
+                                La madera presenta beneficios considerables en aspectos como el aislamiento, permitiendo ahorrar elevados porcentajes en 
+                                calefacción y/o aire acondicionado. 
+                            </p>
+                            <br>
+                            <p>
+                                Derivados como la madera OSB, compuesta por grandes virutas de madera prensadas permiten aprovechar los restos presentes, 
+                                por ejemplo, en aserraderos. 
+                            </p>
+                            <p>
+                                Sin duda, la madera es un material sostenible que incluso permite ahorrar tiempo y dinero en la construcción, pero es 
+                                imprescindible que proceda de talas responsables donde los árboles son replantados. 
+                            </p>
+                            <br>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/c43d5b5aa7fc2ae2b733886ca73245b5.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                                </a>
+                                <br />
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" id="celulosa"><span class = "number">+</span>Celulosa </h3>
+                            <p>
+                                Obtenido a partir de papel desechado, funciona muy bien como aislante. Estas fibras de celulosa se suelen obtener, por ejemplo, de periódicos 
+                                reutilizados y tratados para obtener propiedades ignífugas, insecticidas y antifúngicas.
+                            </p>
+                            <br>
+                            <p>
+                                De forma complementaria, la obtención / producción de este material es bastante económica. 
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" id="corcho"><span class = "number">+</span>Corcho</h3>
+                            <p>
+                                Funciona muy bien como aislante térmico o acústico. Su obtención se realiza directamente de la corteza de los árboles, por lo que no es necesaria
+                                la tala de los mismos. De forma común, se dispone en forma de paneles. 
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/5b927f7dd3667375fb958c8abca8ea5f.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                                </a>
+                                <br />
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" id="lana"><span class = "number">+</span>Lana de oveja</h3>
+                            <p>
+                                Destaca por sus propiedades aislantes y, principalmente, por cómo se comporta ante la humedad. Su origen es completamente natural y su obtención 
+                                consume menos energía en comparación con otros materiales.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/408b0d89235802df7b56341991094427.gif" width="300" height="388" border="0" alt="https://picasion.com/" /></                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" id="barro" ><span class = "number">+</span>Barro cocido</h3>
+                            <p>
+                                Es un material obtenido a partir de arcilla calentada a elevadas temperaturas al que se le aplican tratamientos que favorecen sus propiedades
+                                naturales. 
+                            </p>
+                            <br>
+                            <p>
+                                Es un material sostenible debido, entre otros aspectos, a su fácil reciclaje y la reutilización de los residuos producidos en su elaboración. 
+                            </p>
+                            <p>
+                                /"><img src="https://i.picasion.com/pic92/4fbbe188335be0cfc13063d44530cc82.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" id="bambú"><span class = "number">+</span>Bambú</h3>
+                            <p>
+                                Quizá no estamos tan acostumbrados a este material, pero en otras zonas del planeta como las tropicales y la zona asiática es bastante utilizado. 
+                                Es resistente, ecológico y renovable y se puede emplear como sustituto de la madera. 
+                            </p>
+                            <br>
+                            <p>
+                                Su rápido crecimiento otorga una rápida recuperación a las zonas taladas. 
+                            </p>
+                            <br>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/ddf2620656235c9aeb0389564d04d2f9.gif" width="300" height="232" border="0" alt="https://picasion.com/" /></
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" id="pinturas"><span class = "number">+</span>Pinturas naturales</h3>
+                            <p>
+                                En el caso de las pinturas, su origen debe ser natural y no deben contener compuestos orgánicos volátiles. 
+                            </p>
+                            <br>
+                            <p>
+                                El empleo de este tipo de pinturas repercute positivamente en el medio ambiente, puesto que son biodegradables y favorecen la transpiración de los materiales, 
+                                y en la salud de las personas que desarrollan su actividad en las estancias gracias a la menor expulsión de sustancias contaminantes. 
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/d1418ef36cbe41f6186c53188967b57e.gif" width="300" height="388" border="0" alt="https://picasion.com/" /></
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer id="contacto">
+        <div class="waves" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.57,87.34 C31.04,151.48 357.78,-70.53 500.00,115.97 L500.56,-1.45 L-0.56,-0.47 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+        <div class="contenedor footer-content">
+
+            <div class="contact-us">
+                <div class="footer_texts">
+                    <h2 class="title">Arquitectura Verde</h2>
+                    <p class="footer_copy">Somos expertos cumpliendo tus sueños</p>
+
+                    <div class="social-media">
+                        <a href="https://www.whatsapp.com" target="_blank"class="social-media-icon">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.instagram.com/5.0.5_.a/" target="_blank"class="social-media-icon">
+                           <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009554807218" target="_blank" class="social-media-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="https://media2.giphy.com/media/PcJDzGFriG2bPsPATX/giphy.gif?cid=790b7611a10d57f625384866f5e2a374d423e4b4fb1fac34&rid=giphy.gif&ct=s" width="300" height="215" border="0" alt="https://picasion.com/" class="footer_img">
+            </div>
+            <div class="line"></div>
+        </footer>
+</body>
+</html>

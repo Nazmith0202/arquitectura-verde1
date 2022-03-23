@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eficiencia de Agua</title>
+    <link rel="stylesheet" href="Eficiencia de Agua.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+body .menu-navegacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+body .contact-us {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+main{
+    background: #DDD2C0;
+}
+
+.contenedor{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: url(https://i.picasion.com/resize92/7e308a54ce5298269d13b2e099e26537.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.menu-navegacion{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.199);
+    width: 1500px;
+}
+
+.menu-navegacion a{
+    position: static;
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-navegacion a:hover{
+    background: #faae8e;
+}
+/* Nuestro Servicio */
+
+
+
+.services-contenedor p{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.subtitulo p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.checklist-servicio{
+    width: 45%;
+}
+.service{
+    margin-bottom: 40px;
+}
+
+
+.contenedor-servicio{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.contenedor-servicio img{
+    display: flex;
+}
+
+
+.contenedor-servicio h1{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #b1c5b4 0%, #3f3f2d 100%);
+    width: 40px;
+    height: 40px;
+    color:#fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 35px;
+    margin-right: 6px;
+}
+
+
+/* Footer*/
+
+footer{
+    background: #475c45;
+}
+
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.footer_copy{
+    font-weight: 300;
+}
+
+.footer_img{
+    width: 60%;
+}
+
+
+.social-media{
+    width: auto;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.linea{
+
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.lines{
+
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color: #3d6856;
+}
+
+.waves{
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+    .contenedor-servicio{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+        text-align: center;
+    }
+
+    .service{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    .cont-experts{
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 100%;
+    }  
+}
+    </style>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">Eficiencia de Agua</a>
+            <a href="#beneficios">Propuestas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="services-contenedor" id="acerca">
+            <div class="contenedor-servicio"></div>
+                <h2 class="subtitulo">Ahorro y eficiencia en el uso del agua en los edificios y su entorno (LEED)</h2>
+                <p>
+                    El crecimiento continuado de la población del planeta (9.500 millones de personas en 2050), la pobreza hídrica,
+                    el aumento progresivo del consumo del agua (se ha triplicado en el siglo XX), la mala gestión de la misma, y la 
+                    existencia de instalaciones y grandes infraesctructuras deficientes y obsoletas, pueden ser las causas del problema 
+                    del agua a nivel mundial. La concienciación social y política respecto del uso responsable del agua, junto a los avances 
+                    en tecnología enfocados al consumo y saneamiento eficiente pueden ser soluciones efectivas, tanto a nivel urbano como doméstico. 
+                    Los usuarios de los edificios consumen agua y generan residuales. Existen estrategias verdes, para el ahorro y la eficiencia en el 
+                    uso del agua, que se pueden aplicar en el diseño y mantenimiento de los edificios. En este post os explicamos las estrategias de LEED.
+                </p>
+                <p>
+                    <a href="https://picasion.com/"><img src="https://i.picasion.com/pic92/68b9a6651c22ffcb3ac9cfa08e211711.gif" width="300" height="388" border="0" alt="https://picasion.com/" /></a><br /><a href="https://picasion.com/"></a>
+                </p>
+                <p>
+                    El impacto ambiental debido al aumento continuado del consumo del agua, consiste en la reducción del agua presente en ríos, arroyos, acuíferos 
+                    subterráneos y cuerpos de agua dulce. Se estima que el 70% del planeta está cubierto por agua, y sólo el 1% es agua dulce. Además, sólo el 35% del 
+                    agua que consumimos vuelve a los mismos, mientas que el 65% restante vuelve al sistema de suministro de agua, después de ser usada.
+                </p>
+                <p>
+                    Un jardín vertical ofrece numerosos beneficios a nivel económico, ecológico y social. Una fachada vegetal ayuda 
+                    a purificar el aire, reducir la temperatura ambiente, regular la temperatura y promueve la biodiversidad en la
+                    ciudad. Los muros verdes forman parte de la construcción bioclimática. Y, es más, la gente es más feliz en un 
+                    entorno verde que en un entorno gris. A continuación explicamos los beneficios, uno a uno.
+                </p>
+                <p>
+                    <a href="https://picasion.com/"><img src="https://i.picasion.com/pic92/f18da46d13352d136180e7411f21e8c5.gif" width="300" height="232" border="0" alt="https://picasion.com/" /></a><br /><a href="https://picasion.com/"></a>
+                </p>
+                <p>
+                    Una vez conocido el impacto ambiental asociado al problema del agua, LEED establece unos objetivos en el Rating 
+                    System para la Categoría Water Efficiency:
+                </p>
+                <br>
+                <p>
+                    – Reducir la cantidad de agua necesaria en edificios y el exterior de los mismos.
+                   
+                </p>
+                <p>
+                    - Reducir el consumo de agua municipal
+                </p>
+                <p>
+                    - Reducir la necesidad de tratamiento de las aguas residuales.
+                </p>
+                <p>
+                    – Aprovechamiento del agua de lluvia para las necesidades de agua interior y exterior (equilibrio hídrico).
+
+                </p>
+                <br>
+                <br>
+        </section>
+        <section>
+            <div class="contenedor-servicio">
+                <div class="checklist-servicio">
+
+                        <div class="service">
+                            <h2 class="subtitulo" id="beneficios">LEED propone las siguientes estrategias verdes para la Categoría Water Efficiency
+                                en el interior de los edificios:</h2>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/3eb77c89950f9fd051b447ca45151e9e.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                            </p>
+                            <h3 class ="n-service"><span class="number">1</span>Sanitarios de alta eficiencia</h3>
+                            <p>
+                                Cambiar el viejo inodoro por otro de alta eficiencia que consuma no más de 6 litros por descarga (EPAct de 1992). 
+                                Este acto puede significar hasta un ahorro en consumo de agua en torno al 20%.
+                            </p>
+                            <p>
+                                El sello Water Sense ayuda a identificar los sanitarios de alto rendimiento patrocinados por la EPA 
+                                (Environmental Protection Agency).
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">2</span>Urinarios sin agua</h3>
+                            <p>
+                                Este tipo de aparatos no utiliza agua y requiere un mantenimiento menor. Protegen el medioambiente y colaboran
+                                en el ahorro en el consumo de agua.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">3</span>Inodoros de Compost</h3>
+                            <p>
+                                No utilizan agua sino que procesan los residuos orgánicos con procesos microbiológicos. No es adecuada su 
+                                instalación en edificios de gran altura.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">4</span>Duchas y grifos de flujo bajo</h3>
+                            <p>
+                                Sustituir los grifos de la ducha por otros que consuman 6,7 litros por minuto, es una buena alternativa
+                                para reducir el consumo de agua en cada ducha.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">5</span>Uso de aireadores y sensores de movimiento</h3>
+                            <p>
+                                Colocar un aireador en un grifo puede suponer un 30% de ahorro. Los sensores controlan la cantidad de 
+                                agua suministrada.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">6</span>Instalación de medidores de agua</h3>
+                            <p>
+                                Consiste en instalar contadores por zonas que miden el consumo y ayudan a verificar las estimaciones de 
+                                consumo de agua.
+                            </p> 
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">7</span>Uso de aguas pluviales</h3>
+                            <p>
+                                Recolección de aguas pluviales (rainwater harvesting), que instalados en plantas superiores aprovechan 
+                                la gravedad para su distribución.
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">8</span>Reutilización de aguas grises</h3>
+                            <p>
+                                Las aguas grises suponen entre un 50 y un 80% de las aguas residuales en los edificios de viviendas; 
+                                se pueden almacenar y utilizar posteriormente, mediante los tratamientos adecuados. Las aguas grises 
+                                tienen su origen en bañeras, duchas, lavabos y lavadoras, y no incluyen agua potable, agua de fregaderos, 
+                                lavavajillas ni de inodoros o urinarios.
+                            </p>
+                            <br>
+                            <p>
+                                El agua de duchas y lavabos, se pueden utilizar en inodoros tras su reciclado, y este gesto puede suponer
+                                un ahorro del 30% de consumo de agua para una vivienda tipo. También puede ser utilizada para el riego y el 
+                                lavado del coche.
+
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">9</span>Tratamiento y re-utilización de Aguas residuales</h3>
+                            <p>
+                                El agua regenerada es un recurso con múltiples beneficios y es una estrategia en el diseño de edificios verdes.  
+                                El aprovechamiento tanto de aguas grises como pluviales in-situ, permite su utilización en inodoros, el riego o 
+                                en las torres de refrigeración, una vez han sido tratadas. De esta manera, se crea un circuito cerrado de agua 
+                                reutilizada que permite reducir el consumo de agua de la red general, la generación de aguas residuales, el tratamiento 
+                                en depuradoras locales e incluso la energía necesaria para su tratamiento en estas instalaciones. Los edificios certificados 
+                                LEED que incluyen esta estrategia reciben incentivos por ello de las agencias estatales. Este hecho supone un rápido retorno de 
+                                la inversión.
+                            </p>
+                        </div>
+                        <div class="lines"></div>
+                        <p>
+                            Por contra, el hecho de llevar a cabo el tratamiento de las aguas residuales in situ, puede suponer un consumo adicional de energía.
+                        </p>
+                        <br>
+                        <p>
+                            En el exterior del edificio
+                        </p>
+                        <br>
+                        <p>
+                            Los objetivos principales son:
+                        </p>
+                        <br>
+                        <p>
+                            1. Regar sólo cuando sea necesario.
+                        </p>
+                        <p>
+                            2. Limitar o descartar el uso de agua natural para el riego de jardines.
+                        </p>
+                        <br>
+                        <br>
+                        <div class="service">
+                            <div class="linea"></div>
+                            <h2 class="subtitulo" id="beneficios">Para cumplir con estos objetivos se plantean las siguientes estrategias:</h2>
+                            <div class="linea"></div>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/13211c02a1aa420401254d557121dbbf.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                            </p>
+                            <br>
+                            <h3 class ="n-service"><span class="number">1</span>Un buen diseño del paisaje mediante:</h3>
+                            <br>
+                            <h3 class ="n-service"><span class="number">1.1</span>La selección de plantas apropiadas: </h3>
+                            <p>
+                                las plantas nativas y las plantas adaptables no nativas que se adapten al clima local, sobreviven a pesar de las restricciones 
+                                del uso del agua (se adaptan a las precipitaciones regionales) y requieren menos fertilizantes, son resistentes a enfermedades y 
+                                requieren menor mantenimiento. Se descarta la inclusión de plantas invasoras
+                            </p>
+                            <br>
+                            <h3 class ="n-service"><span class="number">1.2</span>La técnica del Xeriscape: </h3>
+                            <p>
+                                La técnica del Xeriscape, es un ejemplo de buen diseño, y que permite reducir o eliminar el riego complementario mediante una adecuada 
+                                planificación y diseño, el análisis del suelo y su mejora, la selección de plantas apropiadas, riego eficiente, uso de coberturas como
+                                 el mulching y un mantenimiento adecuado.
+                            </p>
+                            <br>
+                            <h3 class ="n-service"><span class="number">1.3</span>El mulching : </h3>
+                            <p>
+                                El mulching sirve para mantener garantizar la humedad y la temperatura adecuada en las raíces de las plantas
+                            </p>
+                            <br>
+                            <h3 class ="n-service"><span class="number">1.4</span>Reducción de Césped: </h3>
+                            <p>
+                                Reducción del uso del césped debido al consumo elevado de agua para su mantenimiento.
+                            </p>
+                            <br>
+                            <h3 class ="n-service"><span class="number">2</span>Riego Eficiente: </h3>
+                            <br>
+                            <h3 class ="n-service"><span class="number">2.1</span>Reducción de Césped: </h3>
+                            <p>
+                                Riego por goteo (eficacia del 90%). No se produce escorrentía superficial como en el riego convencional, el agua se aplica 
+                                sobre la raíz de la planta, y el período de amortización de la inversión es corto.
+                            </p>
+                            <br>
+                            <h3 class ="n-service"><span class="number">2.2</span>Programación adecuada del riego. </h3>
+                            <br>
+                            <h3 class ="n-service"><span class="number">2.3</span>Control del riego basado en el clima local mediante sensores: </h3>
+                            <p>
+                                Control del riego basado en el clima local mediante sensores. Mediante esta tecnología se adaptan los cronogramas de riego, a 
+                                las condiciones reales del entorno, los datos meteorológicos históricos, y las necesidades reales de las plantas.
+                            </p>
+                            <br>
+                            <h3 class ="n-service"><span class="number">2.4</span>Revisiones Anuales: </h3>
+                            <p>
+                                Revisiones anuales de las necesidades reales de las diferente áreas que forman el paisaje.
+                            </p>
+                            <br>
+                            <h3 class ="n-service"><span class="number">3</span>Mantenimiento: </h3>
+                            <p>
+                                Altura adecuada del corte si existe césped, utilizar los recortes como abono natural y revisión del sistema de riego.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/360a5f1ddebc20e5281f6c9618b9003c.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer id="contacto">
+        <div class="waves" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.57,87.34 C31.04,151.48 357.78,-70.53 500.00,115.97 L500.56,-1.45 L-0.56,-0.47 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+        <div class="contenedor footer-content">
+
+            <div class="contact-us">
+                <div class="footer_texts">
+                    <h2 class="title">Arquitectura Verde</h2>
+                    <p class="footer_copy">Somos expertos cumpliendo tus sueños</p>
+
+                    <div class="social-media">
+                        <a href="https://www.whatsapp.com" target="_blank"class="social-media-icon">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.instagram.com/5.0.5_.a/" target="_blank"class="social-media-icon">
+                           <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009554807218" target="_blank" class="social-media-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="https://media2.giphy.com/media/PcJDzGFriG2bPsPATX/giphy.gif?cid=790b7611a10d57f625384866f5e2a374d423e4b4fb1fac34&rid=giphy.gif&ct=s" width="300" height="215" border="0" alt="https://picasion.com/" class="footer_img">
+            </div>
+            <div class="line"></div>
+        </footer>
+</body>
+</html>

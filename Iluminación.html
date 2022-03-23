@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iluminación</title>
+    <link rel="stylesheet" href="Iluminación.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+body .menu-navegacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+body .contact-us {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+main{
+    background: #DDD2C0;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: url(https://i.picasion.com/resize92/7e308a54ce5298269d13b2e099e26537.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.menu-navegacion{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.199);
+    width: 1500px;
+}
+
+.menu-navegacion a{
+    position: static;
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-navegacion a:hover{
+    background: #faae8e;
+}
+/* Nuestro Servicio */
+
+.alex{
+    margin-bottom: 7px;
+    color: #ffffff;
+}
+.alex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.alex img{
+    width: 50;
+    height: 50%;
+}
+.alexander{
+    width: 65%;
+}
+
+.services-contenedor p{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.subtitulo p{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.checklist-servicio{
+    width: 45%;
+}
+.service{
+    margin-bottom: 40px;
+}
+
+
+.contenedor-servicio{
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.contenedor-servicio img{
+    text-align: center;
+
+}
+.contenedor-servicio h1{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #b1c5b4 0%, #3f3f2d 100%);
+    width: 40px;
+    height: 35px;
+    color:#fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 35px;
+    margin-right: 6px;
+}
+
+
+/* Footer*/
+
+footer{
+    background: #475c45;
+    padding-bottom: 0.2px;
+}
+
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.footer_copy{
+    font-weight: 300;
+}
+
+.footer_img{
+    width: 60%;
+}
+
+
+.social-media{
+    width: auto;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.linea{
+
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.lines{
+
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color: #3d6856;
+}
+
+.waves{
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+    .contenedor-servicio{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+        text-align: center;
+    }
+
+    .service{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 100%;
+    }  
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#iluminación">Iluminación</a>
+            <a href="#componentes">Componentes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="services-contenedor" id="iluminación">
+            <div class="contenedor-servicio"></div>
+                <h2 class="subtitulo">Iluminación</h2>
+                <p>
+                    La iluminación natural no sólo se trata de proporcionar suficiente luz de día a un espacio, sino de hacerlo sin producir deslumbramiento, exceso de calor, 
+                    u otros efectos negativos para el usuario. Tomar en cuenta estas condiciones de la iluminación natural resulta de suma importancia en el proceso de diseño arquitectónico, 
+                    pues a través de ésta es posible conseguir interiores en los que se vea reflejado un significativo ahorro de energía y la creación de una sensación de bienestar para el usuario; 
+                    pero además, la luz natural es capaz de dar un impulso al valor de los espacios y las formas, y brindar expresión y significado mientras se modifica y enaltece el objeto mediante la percepción del
+                    juego de luces y sombras en sus múltiples tonalidades. 
+                </p>
+                <br>
+                <p>
+                    Ahora bien, el empleo de la luz natural en espacios arquitectónicos está ligado a factores como la localidad, el tiempo y las condiciones atmosféricas presentes en el espacio 
+                    donde se realiza la construcción. En función de estas condiciones el componente básico del diseño con luz natural será la ventana (mas no es único), pues permite una interacción entre el interior 
+                    y el exterior propiciando un cambio luminoso, térmico y acústico, así como de ventilación natural. 
+                </p>
+                <p>
+                    <img src="https://i.picasion.com/pic92/beec00fefa636946adfa79060444858d.gif" width="300" height="232" border="0" alt="https://picasion.com/" /></
+                </p>
+                <p>
+                    Al entrar por la ventana, la luz natural proviene de distintos puntos: una parte viene de la bóveda celeste y, en momentos, directamente del sol; aunque también buena parte de esta luz resulta del 
+                    reflejo de las superficies exteriores, como edificios enfrentados y el suelo. 
+                </p>
+                <br>
+                <p>
+                    Básicamente los sistemas de iluminación natural en arquitectura son los de iluminación lateral, cenital, y combinada. 
+                </p>
+                <br>
+                <p>
+                    En los sistemas de iluminación lateral la luz llega desde una abertura ubicada en un muro lateral, y es por esta razón que la iluminación del plano de trabajo cercano a la ventana tendrá un nivel 
+                    alto, de modo que conforme aumenta la distancia entre el usuario y la ventana el valor de la iluminación directa disminuye, y en cambio la cantidad de luz reflejada y difusa se incrementa. 
+                </p>
+                <p>
+                    <img src="https://i.picasion.com/pic92/7989d1550c5379c8b7456d542faf70af.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                </p>
+                <p>
+                    La iluminación cenital se refiere a aquella que llega desde el techo o cualquier superficie superior. La principal ventaja de este tipo de iluminación es su gran potencial para iluminar con calidad y cantidad. 
+                </p>
+                <br>
+                <p>
+                    Por otro lado, la iluminación combinada se refriere a aquella que aprovecha los suministros de luz natural ya sea lateral o cenital por medio de aperturas en vanos, pergolados, mamparas, etc. 
+                </p>
+                <br>
+                <p>
+                    Dichos sistemas de iluminación a su vez se construyen a partir de diferentes tecnologías y componentes que son necesarios para la buena distribución de luz en el espacio.
+                </p>
+                <br>
+                <p>
+                    En cuanto a las tecnologías, éstas pueden incluir el uso de cristales de alto rendimiento y controles de iluminación eléctrica sensibles a la luz natural, o en el caso de renovaciones de construcciones ya 
+                    hechas también se cuenta con elementos como las celosías, que son una especie de piel que impide el paso directo de la luz y aire a través de la ventana, aunque en este caso se trata más de un elemento decorativo; 
+                    los anteriores son además puntos esenciales, que presentes en los sistemas de iluminación consiguen una distribución eficiente y controlada de la luz natural.
+                </p>
+                <h2 class="subtitulo" id="componentes" >Los componentes arquitectónicos que pueden encontrarse en una construcción son:</h2>
+            <div class="contenedor-servicio">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class ="n-service" ><span class="number">+</span>Galerías</h3>
+                            <p>
+                                Espacios cubiertos unidos a un edificio, que pueden abrirse o cerrarse mediante cristales.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/32a2bc5201e504be8098a37f27c615fe.gif" width="300" height="232" border="0" alt="https://picasion.com/" /></
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" ><span class = "number">+</span>Patios </h3>
+                            <p>
+                                El espacio encerrado por paredes de uno o varios edificios y abierto al exterior por su parte superior.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/6a46402ce396d7ceb3fed917ee34aed9.gif" width="300" height="388" border="0" alt="https://picasion.com/" /></="">
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" ><span class = "number">+</span>Porche</h3>
+                            <p>
+                                Espacio cubierto unido a un edificio a nivel del suelo, abierto al entorno exterior que tiene la ventaja de 
+                                proteger contra la radiación solar directa y la lluvia.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/a54245a388aa47ce2ed1580f1d6b5eb0.gif" width="300" height="388" border="0" alt="https://picasion.com/" /></
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" ><span class = "number">+</span>Atrio</h3>
+                            <p>
+                                Espacio cerrado lateralmente por las paredes de un edificio y cubierto con material trasparente y translúcido. 
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/f3a430f490a641455f7533d7bea65ed8.gif" width="300" height="388" border="0" alt="https://picasion.com/" /></
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" ><span class = "number">+</span>Conductores de luz</h3>
+                            <p>
+                                Espacio que permite la manipulación de la luz a zonas interiores que no están unidas al exterior, esto se 
+                                consigue con materiales reflectantes de luz natural a fin de dirigir la luz natural difusa hacia abajo.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/5582788a3b92aab2b4f2cdab566f1c5b.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" ><span class = "number">+</span>Paredes translúcidas: </h3>
+                            <p>
+                                Construidas con materiales translúcidos que forman parte de un cierre vertical en un edificio. Tienen la 
+                                característica de separar dos ambientes luminosos permitiendo la penetración lateral de luz y difundiéndola 
+                                a través del material del que están construidas. 
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/fd4948da89d6de8cdf37640595a8e256.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service" ><span class = "number">+</span>Claraboyas: </h3>
+                            <p>
+                                Aberturas horizontales o inclinadas construidas en la cubierta de un espacio.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/badccfd91003b2bba88153a3dd8dfd4c.gif" width="300" height="232" border="0" alt="https://picasion.com/" />
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class ="n-service"><span class = "number">+</span>Cúpulas: </h3>
+                            <p>
+                                Espacios que permiten la iluminación cenital, pueden ser de vidrio, material acrílico o policarbonato. 
+                            </p>
+                            <p>
+                                Como se puede deducir, componentes como los anteriores enlistados tienen un importante impacto sobre 
+                                la eficiencia energética de un espacio. En muchos casos conciliar las diferentes demandas de cada elemento 
+                                se convierte en una tarea bastante compleja, por lo que es necesario priorizar cada uno de los aspectos y 
+                                necesidades relacionadas con la iluminación.
+                            </p>
+                            <p>
+                                <img src="https://i.picasion.com/pic92/4d6b4fafc51da94a3917117ddce3652a.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer id="contacto">
+        <div class="waves" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.57,87.34 C31.04,151.48 357.78,-70.53 500.00,115.97 L500.56,-1.45 L-0.56,-0.47 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+        <div class="contenedor footer-content">
+
+            <div class="contact-us">
+                <div class="footer_texts">
+                    <h2 class="title">Arquitectura Verde</h2>
+                    <p class="footer_copy">Somos expertos cumpliendo tus sueños</p>
+
+                    <div class="social-media">
+                        <a href="https://www.whatsapp.com" target="_blank"class="social-media-icon">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.instagram.com/5.0.5_.a/" target="_blank"class="social-media-icon">
+                           <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009554807218" target="_blank" class="social-media-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="https://media2.giphy.com/media/PcJDzGFriG2bPsPATX/giphy.gif?cid=790b7611a10d57f625384866f5e2a374d423e4b4fb1fac34&rid=giphy.gif&ct=s" width="300" height="215" border="0" alt="https://picasion.com/" class="footer_img">
+            </div>
+            <div class="line"></div>
+        </footer>
+</body>
+</html>

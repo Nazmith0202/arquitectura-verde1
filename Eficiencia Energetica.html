@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eficiencia Energetica</title>
+    <link rel="stylesheet" href="Eficiencia Energetica.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+body .menu-navegacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+body .contact-us {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+main{
+    background: #DDD2C0;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: url(https://i.picasion.com/resize92/7e308a54ce5298269d13b2e099e26537.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.menu-navegacion{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.199);
+    width: 1500px;
+}
+
+.menu-navegacion a{
+    position: static;
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-navegacion a:hover{
+    background: #faae8e;
+}
+/* Nuestro Servicio */
+
+
+.services-contenedor p{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.subtitulo p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* Footer*/
+
+footer{
+    background: #475c45;
+    padding-bottom: 0.2px;
+}
+
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.footer_copy{
+    font-weight: 300;
+}
+
+.footer_img{
+    width: 60%;
+}
+
+
+.social-media{
+    width: auto;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color: #3d6856;
+}
+
+.waves{
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+    .contenedor-servicio{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+        text-align: center;
+    }
+
+    .service{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    .cont-experts{
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 100%;
+    }  
+}
+    </style>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">Eficiencia energética en la edificación</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="services-contenedor" id="acerca">
+            <div class="contenedor-servicio"></div>
+                <h2 class="subtitulo">Eficiencia energética en la edificación</h2>
+                <p>
+                    Un edificio energéticamente eficiente es aquel que minimiza el uso de las energías convencionales, 
+                    de modo de reducir su demanda energética, producir in situ si es posible y hacer uso racional de la 
+                    energía final requerida.
+                </p>
+                <br>
+                <p>
+                    Para lograr esto, se deben usar estrategias de diseño pasivo y de diseño activo. Por diseño pasivo nos 
+                    referimos a aquella arquitectura que considera el clima y el contexto como condicionantes preponderantes 
+                    para el proceso de diseño. 
+                </p>
+                <br>
+                <p>
+                    <img src="https://i.picasion.com/pic92/4b37a831063dd02f3111e62445126a58.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                </p>
+                <p>
+                    Esto implica:
+                </p>
+                <p>
+                    - Controlar la ventilación natural, a fin de permitir la renovación de aire y enfriar espacios en verano. 
+                    Controlar también la ventilación en invierno, de manera que permita mantener un aire limpio, sin que afecte 
+                    la temperatura interior. Esto implica reducción de energía requerida para sistemas de aire acondicionado.
+                </p>
+                <br>
+                <p>
+                    - Usar materiales de la envolvente térmica o “piel” del edificio que permita, según sean las condiciones 
+                    climáticas del entorno, aislar y/o acumular calor en invierno. Además, se debe procurar que esta envolvente 
+                    sea lo más hermética posible, para evitar perdidas térmicas en invierno. Un adecuado uso de los materiales en 
+                    la piel del edificio permite reducir los costos energéticos asociados a sistemas de climatización.
+                </p>
+                <br>
+                <p>
+                    - Optimizar el uso de la radiación solar para calentar pasivamente los espacios en invierno y/o controlar el 
+                    exceso de radiación en verano para evitar sobrecalentamiento. Esto implica reducción de energía requerida para 
+                    calefaccionar o enfriar los espacios.
+                </p>
+                <br>
+                <p>
+                    - Las ganancias solares también nos permiten optimizar la iluminación natural para reducir la demanda energética 
+                    de iluminación artificial.
+                </p>
+                <br>
+                <p>
+                    - Usar artefactos de alta eficiencia energética en iluminación y línea blanca, que permitan ahorrar energía. Si 
+                    bien estos aspectos no son parte del diseño pasivo como tal, se puede asumir que la elección de estos artefactos, 
+                    necesarios para nuestra habitabilidad y confort, pueden hacer una significativa reducción de la demanda energética.
+                </p>
+                <br>
+                <br>
+                <p>
+                    Por diseño activo nos referimos al uso de tecnologías asociadas a las energías renovables no convencionales (ERNC) para 
+                    la generación de energía en la edificación. Esto significa generación de energía térmica y/o eléctrica (paneles fotovoltaicos, 
+                    paneles solares térmicos, turbinas eólicas, geotermia, etc.) a partir de los recursos naturales disponibles en el lugar (radiación 
+                    solar, vientos, agua, biomasa, etc.). Dependiendo de la escala y uso del edificio, requerirá de sistemas de ventilación, calefacción y 
+                    aire acondicionado. De ser así, se deben usar aquellas tecnologías que demanden la menor energía posible para su operación y mantención.
+                </p>
+        </section>
+    <footer id="contacto">
+        <div class="waves" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.57,87.34 C31.04,151.48 357.78,-70.53 500.00,115.97 L500.56,-1.45 L-0.56,-0.47 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+        <div class="contenedor footer-content">
+
+            <div class="contact-us">
+                <div class="footer_texts">
+                    <h2 class="title">Arquitectura Verde</h2>
+                    <p class="footer_copy">Somos expertos cumpliendo tus sueños</p>
+
+                    <div class="social-media">
+                        <a href="https://www.whatsapp.com" target="_blank"class="social-media-icon">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.instagram.com/5.0.5_.a/" target="_blank"class="social-media-icon">
+                           <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009554807218" target="_blank" class="social-media-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="https://media2.giphy.com/media/PcJDzGFriG2bPsPATX/giphy.gif?cid=790b7611a10d57f625384866f5e2a374d423e4b4fb1fac34&rid=giphy.gif&ct=s" width="300" height="215" border="0" alt="https://picasion.com/" class="footer_img">
+            </div>
+            <div class="line"></div>
+        </footer>
+</body>
+</html>

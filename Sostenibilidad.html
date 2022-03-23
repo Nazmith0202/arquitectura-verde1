@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sostenibilidad</title>
+    <link rel="stylesheet" href="Sostenibilidad.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+body .menu-navegacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+body .contact-us {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+main{
+    background: #DDD2C0;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    height: 100vh;
+    background-image: url(https://i.picasion.com/resize92/7e308a54ce5298269d13b2e099e26537.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.menu-navegacion{
+    position: fixed;
+    background: rgba(24, 23, 23, 0.562);
+    width: 1500px;
+}
+
+.menu-navegacion a{
+    position: static;
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-navegacion a:hover{
+    background: #faae8e;
+}
+/* Nuestro Servicio */
+
+
+.services-contenedor p{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.subtitulo p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* Footer*/
+
+footer{
+    background: #475c45;
+    padding-bottom: 0.2px;
+}
+
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.footer_copy{
+    font-weight: 300;
+}
+
+.footer_img{
+    width: 60%;
+}
+
+
+.social-media{
+    width: auto;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color: #3d6856;
+}
+
+.waves{
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+    .contenedor-servicio{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+        text-align: center;
+    }
+
+    .service{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and(max-width:500px) {
+    .menu-navegacion{
+        width: 100vw;
+    }
+
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 100%;
+    }  
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">¿Qué es la arquitectura sostenible?</a>
+            <a href="#como">¿Cómo lograr la sostenibilidad en la arquitectura?</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="services-contenedor" id="acerca">
+            <div class="contenedor-servicio"></div>
+                <h2 class="subtitulo">¿QUÉ ES LA ARQUITECTURA SOSTENIBLE?</h2>
+                <p>
+                    Desde que surgió el concepto de «construcción ecológica» en los años 60 y 70, la arquitectura sostenible se ha convertido en una de 
+                    las tendencias arquitectónicas de más rápido crecimiento en el mundo ecológico hoy en día.
+                </p>
+                <p>
+                    <img src="https://i.picasion.com/pic92/68480968f69fefb0399b13293d859b0c.gif" width="300" height="388" border="0" alt="https://picasion.com/" /></
+                </p>
+                <br>
+                <p>
+                    La idea detrás de la arquitectura sostenible es utilizar solo técnicas y materiales respetuosos con el medio ambiente durante el proceso
+                    de construcción, tener en cuenta las condiciones del sitio, incorporándolos al diseño siempre que sea posible, y buscar minimizar el impacto 
+                    negativo de los edificios a través del consumo eficiente de energía y el espacio de desarrollo. 
+                </p>
+                <br>
+                <p>
+                    También significa utilizar materiales que minimicen la huella ambiental de la estructura, ya sea debido a procesos de fabricación que requieren
+                    mucha energía o largas distancias de transporte. Los arquitectos y constructores sostenibles también deben considerar emplear sistemas en el diseño 
+                    que aprovechen los desechos y los reutilicen de la manera más eficiente posible.
+                </p>
+                <br>
+                <h2 class="subtitulo" id="como">¿Cómo lograr la sostenibilidad en la arquitectura?</h2>
+                <p>
+                    El primer paso es llevar a cabo una inspección del sitio para determinar las condiciones naturales y las limitaciones que se deben tener en cuenta. 
+                    Este es también el momento para verificar los requisitos y regulaciones de las autoridades locales o reunirse con personas relevantes para hablar sobre el proyecto en particular.
+                </p>
+                <br>
+                <p>
+                    La arquitectura sostenible también se centra principalmente en cómo se utilizará la energía para la estructura y cómo conservarla de manera efectiva.
+                </p>
+                <p>
+                    <img src="https://i.picasion.com/pic92/17d0dbd66845dbd015f76f10ce0b17a9.gif" width="300" height="232" border="0" alt="https://picasion.com/" /></
+                </p>
+                <br>
+                <p>
+                    Este proceso implica garantizar que la construcción tenga un excelente aislamiento y el uso de persianas y toldos como enfriadores de construcciones pasivas. Las construcciones 
+                    sostenibles a menudo también dependen en gran medida de la energía solar u otras fuentes alternativas de energía.
+                </p>
+                <br>
+                <p>
+                    Además, el uso de materiales de construcción naturales y reciclados combinados con fuentes de energía renovables generalmente hace que los edificios sostenibles sean mucho más baratos de construir y mantener.
+                </p>
+                <br>
+                <p>
+                    Uno de los objetivos más importantes para lograr la sostenibilidad en la arquitectura es la eficiencia energética a lo largo de la vida útil de un edificio.
+                </p>
+                <br>
+                <p>
+                    Esto significa implementar técnicas tanto pasivas como activas para reducir las necesidades energéticas del edificio y mejorar su capacidad para capturar o incluso generar su propia energía.
+                </p>
+                <br>
+                <p>
+                    La colocación adecuada del edificio es vital para minimizar su consumo de energía, creando un diseño que funciona con su entorno natural, en lugar de en contra de ellos.
+                </p>
+                <br>
+                <p>
+                    La orientación de un edificio y sus ventanas o el tamaño de sus habitaciones son ejemplos de estrategias arquitectónicas pasivas para garantizar la eficiencia energética. Un edificio bien 
+                    aislado requerirá menos energía generadora de calor o disipación, siempre que tenga la capacidad de ventilar y expulsar el aire interior contaminado.
+                </p>
+                <br>
+                <p>
+                    Las posibilidades de explotar los recursos ambientales locales son una de las cosas críticas a considerar cuando se realizan inspecciones iniciales del sitio.
+                </p>
+                <br>
+                <p>
+                    Además de los beneficios para el medio ambiente y el ahorro de costos, uno de los mayores beneficios de la arquitectura sostenible es que el estilo y el diseño no deben verse comprometidos 
+                    por el énfasis en los materiales naturales y la conservación de la energía.
+                </p>
+                <p>
+                    De hecho, la arquitectura sostenible pone énfasis no solo en el estilo y el diseño, sino también en la innovación. Esto ha llevado a que muchos edificios sostenibles sean conocidos por su 
+                    aspecto impresionante.
+                </p>
+                <p>
+                    <img src="https://i.picasion.com/pic92/ca4b1c70ac45bdb9c34348291c32dd4a.gif" width="300" height="388" border="0" alt="https://picasion.com/" />
+                </p>
+        </section>
+    <footer id="contacto">
+        <div class="waves" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.57,87.34 C31.04,151.48 357.78,-70.53 500.00,115.97 L500.56,-1.45 L-0.56,-0.47 Z" style="stroke: none; fill: #DDD2C0;">
+                </path>
+            </svg>
+        </div>
+        <div class="contenedor footer-content">
+
+            <div class="contact-us">
+                <div class="footer_texts">
+                    <h2 class="title">Arquitectura Verde</h2>
+                    <p class="footer_copy">Somos expertos cumpliendo tus sueños</p>
+
+                    <div class="social-media">
+                        <a href="https://www.whatsapp.com" target="_blank"class="social-media-icon">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.instagram.com/5.0.5_.a/" target="_blank"class="social-media-icon">
+                           <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009554807218" target="_blank" class="social-media-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="https://media2.giphy.com/media/PcJDzGFriG2bPsPATX/giphy.gif?cid=790b7611a10d57f625384866f5e2a374d423e4b4fb1fac34&rid=giphy.gif&ct=s" width="300" height="215" border="0" alt="https://picasion.com/" class="footer_img">
+            </div>
+            <div class="line"></div>
+        </footer>
+</body>
+</html>
